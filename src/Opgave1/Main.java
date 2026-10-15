@@ -10,10 +10,12 @@ public class Main {
     }*/
 
     //Rettet version
-    Scanner scan = new Scanner(System.in);
-    private String msg;
+    private static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        promptNumber("Write a number");
+    }
 
-    public int promptNumber(String msg) {
+    public static int promptNumber(String msg) {
         System.out.println(msg);
         try {
             return Integer.parseInt(scan.nextLine());
